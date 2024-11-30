@@ -1,22 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LucideIcon } from 'lucide-react';
 
 interface SocialLinkProps {
   href: string;
-  icon: React.ReactNode;
+  Icon: LucideIcon;
   label: string;
 }
 
-export const SocialLink = ({ href, icon, label }: SocialLinkProps) => (
+export const SocialLink: React.FC<SocialLinkProps> = ({ href, Icon, label }) => (
   <motion.a
     href={href}
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.95 }}
-    className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-xl transition-all"
-    aria-label={label}
+    className="flex flex-col items-center gap-2"
   >
-    <span className="text-gray-700 dark:text-gray-200">{icon}</span>
+    <div className="p-4 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300">
+      <Icon className="w-6 h-6" />
+    </div>
+    <span className="text-sm font-medium">{label}</span>
   </motion.a>
 );

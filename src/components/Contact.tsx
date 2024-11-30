@@ -13,17 +13,51 @@ export const Contact = () => {
           transition={{ duration: 0.5 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-bold mb-8">Contactez-moi</h2>
-          <p className="text-gray-300 mb-12">
-            Je suis toujours intéressé par de nouveaux projets et opportunités.
-          </p>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-4xl font-bold mb-8"
+          >
+            Contactez-moi
+          </motion.h2>
           
-          <div className="flex justify-center space-x-6">
-            <SocialLink href="mailto:derisswvde@gmail.com" Icon={Mail} label="Email" />
-            <SocialLink href="https://github.com/TheShvdow" Icon={Github} label="GitHub" />
-            <SocialLink href="https://www.linkedin.com/in/idrissa-wade/" Icon={Linkedin} label="LinkedIn" />
-            <SocialLink href="tel:+221778014941" Icon={Phone} label="Téléphone" />
-          </div>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-gray-300 mb-12"
+          >
+            Je suis toujours intéressé par de nouveaux projets et opportunités.
+          </motion.p>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          >
+            <SocialLink 
+              href="mailto:derisswvde@gmail.com" 
+              Icon={Mail} 
+              label="Email" 
+            />
+            <SocialLink 
+              href="https://github.com/TheShvdow" 
+              Icon={Github} 
+              label="GitHub" 
+            />
+            <SocialLink 
+              href="https://www.linkedin.com/in/idrissa-wade/" 
+              Icon={Linkedin} 
+              label="LinkedIn" 
+            />
+            <SocialLink 
+              href="tel:+221778014941" 
+              Icon={Phone} 
+              label="Téléphone" 
+            />
+          </motion.div>
         </motion.div>
       </div>
     </section>

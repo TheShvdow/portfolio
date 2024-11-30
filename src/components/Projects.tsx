@@ -4,9 +4,9 @@ import { useInView } from 'react-intersection-observer';
 
 const projects = [
   {
-    title: "Plateforme E-Commerce",
-    description: "Solution e-commerce complète avec backend Laravel et frontend React",
-    tech: ["Laravel", "React", "PostgreSQL", "Docker"],
+    title: "Plateforme de Reseau Sociale ",
+    description: "Réseau social destiné aux tailleurx, vendeurs de merceries et aux clients avec backend Nodejs et frontend React",
+    tech: ["NodeJs", "React", "PostgreSQL", "Docker","Swagger"],
     image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
     href: 'https://github.com/TheShvdow/miroir-model'
   },

@@ -121,9 +121,9 @@ export const HeroContent = ({ onOpenQRModal }: HeroContentProps) => {
       </div>
 
       <div className="flex gap-6 justify-center lg:justify-start">
-        <SocialLink href={SOCIAL_LINKS.GITHUB} icon={<Github />} label="GitHub" />
-        <SocialLink href={SOCIAL_LINKS.LINKEDIN} icon={<Linkedin />} label="LinkedIn" />
-        <SocialLink href={SOCIAL_LINKS.EMAIL} icon={<Mail />} label="Email" />
+        <SocialLink href={SOCIAL_LINKS.GITHUB} Icon={Github} label="GitHub" />
+        <SocialLink href={SOCIAL_LINKS.LINKEDIN} Icon={Linkedin} label="LinkedIn" />
+        <SocialLink href={SOCIAL_LINKS.EMAIL} Icon={Mail} label="Email" />
       </div>
     </motion.div>
   );

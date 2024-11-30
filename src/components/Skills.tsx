@@ -27,7 +27,12 @@ const skillCategories = [
     title: "DevOps",
     skills: ["Docker", "Git", "CI/CD", "Cloud Deployment"],
     color: "from-red-500 to-red-600 dark:from-red-600 dark:to-red-700"
-  }
+  },
+  {
+    title: "Documentation",
+    skills: ["Swagger"],
+    color: "from-indigo-700 to-indigo-600 dark:from-yellow-600 dark:to-yellow-700"
+  },
 ];
 
 export const Skills = () => {
