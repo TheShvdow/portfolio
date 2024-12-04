@@ -24,7 +24,7 @@ export const QRCodeModal = ({ isOpen, onClose, cvUrl }: QRCodeModalProps) => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
-            className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl max-w-sm w-full relative"
+            className="bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gray-800 p-6 rounded-2xl shadow-xl max-w-sm w-full relative"
             onClick={e => e.stopPropagation()}
           >
             <button
