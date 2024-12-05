@@ -4,23 +4,23 @@ import { useInView } from 'react-intersection-observer';
 
 const projects = [
   {
-    title: "Plateforme de Reseau Sociale ",
-    description: "Réseau social destiné aux tailleurx, vendeurs de merceries et aux clients avec backend Nodejs et frontend React",
-    tech: ["NodeJs", "React", "PostgreSQL", "Docker","Swagger"],
+    title: "Plateforme de Réseau Social",
+    description: "Réseau social destiné aux tailleurs, vendeurs de merceries et aux clients avec backend Node.js et frontend React",
+    tech: ["NodeJs", "React", "PostgreSQL", "Docker", "Swagger"],
     image: "src/images/mirror_model.png",
     href: 'https://github.com/TheShvdow/miroir-model'
   },
   {
     title: "Application Mobile Money",
     description: "Application mobile multiplateforme développée avec Flutter",
-    tech: ["Flutter","Laravel", "Firebase", "REST API"],
+    tech: ["Flutter", "Laravel", "Firebase", "REST API"],
     image: "src/images/Naffa-money.png",
-    href : "https://github.com/TheShvdow/naffa_money_flutter"
+    href: "https://github.com/TheShvdow/naffa_money_flutter"
   },
   {
     title: "Gestion des Dettes",
-    description: "Solution de gestion de dettes d'une boutique avec possibilité de suivi fréquentielle ",
-    tech: ["REST API", "Firebase","POSTGRESQL", "Laravel" ,"WebSocket","Swagger"],
+    description: "Solution de gestion de dettes d'une boutique avec possibilité de suivi fréquentiel",
+    tech: ["REST API", "Firebase", "POSTGRESQL", "Laravel", "WebSocket", "Swagger"],
     image: "https://plus.unsplash.com/premium_photo-1676585567527-d25dbeec5b37?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     href: "https://github.com/TheShvdow/gestion_dette_laravel"
   }
@@ -38,12 +38,15 @@ export const Projects = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projets Réalisés</h2>
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer"
+              className="block bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer"
             >
               <img 
                 src={project.image} 
@@ -64,7 +67,7 @@ export const Projects = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

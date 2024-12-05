@@ -46,8 +46,8 @@ export const QRCodeModal = ({ isOpen, onClose, cvUrl }: QRCodeModalProps) => {
                   includeMargin={true}
                 />
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                Scannez ce QR code avec votre téléphone pour télécharger le CV
+              <p className="text-2xl dark:text-white">
+                <a className='text-white' href="https://2ofstncbsvx4knvy4mo1sfqmqg5vduqb.vercel.app/">Cliquez Ici pour visualiser </a> 
               </p>
             </div>
           </motion.div>
