@@ -7,14 +7,14 @@ const projects = [
     title: "Plateforme de Reseau Sociale ",
     description: "Réseau social destiné aux tailleurx, vendeurs de merceries et aux clients avec backend Nodejs et frontend React",
     tech: ["NodeJs", "React", "PostgreSQL", "Docker","Swagger"],
-    image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
+    image: "src/images/mirror_model.png",
     href: 'https://github.com/TheShvdow/miroir-model'
   },
   {
-    title: "Application Bancaire Mobile",
+    title: "Application Mobile Money",
     description: "Application mobile multiplateforme développée avec Flutter",
-    tech: ["Flutter", "Node.js", "Firebase", "REST API"],
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+    tech: ["Flutter","Laravel", "Firebase", "REST API"],
+    image: "src/images/Naffa-money.png"
   },
   {
     title: "Système de Gestion des Tâches",
