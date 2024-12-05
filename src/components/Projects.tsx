@@ -14,13 +14,15 @@ const projects = [
     title: "Application Mobile Money",
     description: "Application mobile multiplateforme développée avec Flutter",
     tech: ["Flutter","Laravel", "Firebase", "REST API"],
-    image: "src/images/Naffa-money.png"
+    image: "src/images/Naffa-money.png",
+    href : "https://github.com/TheShvdow/naffa_money_flutter"
   },
   {
-    title: "Système de Gestion des Tâches",
-    description: "Solution de gestion des tâches d'entreprise avec mises à jour en temps réel",
-    tech: ["Angular", "Express.js", "MongoDB", "WebSocket"],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+    title: "Gestion des Dettes",
+    description: "Solution de gestion de dettes d'une boutique avec possibilité de suivi fréquentielle ",
+    tech: ["REST API", "Firebase","POSTGRESQL", "Laravel" ,"WebSocket","Swagger"],
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+    href: "https://github.com/TheShvdow/gestion_dette_laravel"
   }
 ];
 
@@ -41,7 +43,7 @@ export const Projects = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all"
+              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer"
             >
               <img 
                 src={project.image} 
